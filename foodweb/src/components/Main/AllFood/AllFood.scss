@@ -1,0 +1,107 @@
+.allfood{
+    width: 100%;
+    margin:200px 0px;
+}
+.food-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: capitalize;
+        color: #385E01;
+    }
+    h4{
+        max-width: 650px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 61px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #000000;
+        margin-top: 16px;
+    }
+    &__list{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(265px , 1fr));
+        gap: 0 53px;
+        margin-top: 130px;
+        &--item{
+            padding: 70px 50px;
+            position: relative;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            flex-direction: column;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.3s ease-in-out all;
+            .list{
+                margin-bottom: 30px;
+                transition: 0.3s ease-in-out all;
+
+            }
+            &:hover{
+                background: #E7F0F1;
+            }
+            &:hover .box{
+                transform: translateY(100px);
+            }
+            &:hover .list{
+                margin-top: -40px;
+            }
+            img{
+                width: 202px;
+                height: 148px;
+            }
+            h5{
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 47px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #000000;
+            }
+            .box{
+                position: absolute;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                flex-direction: column;
+                transform: translateY(250px);
+                margin-top:40px;
+                transition: 0.3s ease-in-out all;
+            }
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height:16px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #443D3D;
+                padding-top: 18px;
+            }
+            span{
+                display: flex;
+                align-items:center;
+                gap: 0 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                margin-top: 20px;
+                svg{
+                    font-size: 24px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}

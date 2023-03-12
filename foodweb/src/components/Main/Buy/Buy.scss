@@ -1,0 +1,49 @@
+.buy{
+    width: 100%;
+    padding: 126px 0;
+}
+.buy-list{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.buy-item--left{
+    img{
+        width: 584px;
+        height: 508px;
+    }
+}
+.buy-item--right{
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    div{
+        display: flex;
+        align-items:center;
+        gap: 0 10px;
+        img{
+            width: 110px;
+        }
+        span{
+            display: flex;
+            align-items:flex-start;
+            flex-direction: column;
+            margin-bottom: 30px;
+            h3{
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 43px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+            p{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: capitalize;
+                color: #454545;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.header {
+    width: 100%;
+    background-color: #5a7f00;
+    color: #FFFFFF;
+    padding: 18px 0;
+    z-index: 10000;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 10px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    img {
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+    span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 35px;
+        cursor: pointer;
+    }
+}
+
+.header-navbar__tabs {
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 10px;
+}
+
+.header-navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 0 71px;
+    li{
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: 0.3s ease-in-out all;
+        &:hover{
+            color:#E73A2E;
+        }
+    }
+}
+
+.header-navbar__booking {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 10px;
+    svg {
+        font-size: 34px;
+        cursor: pointer;
+    }
+}
+.universal-btn{
+    width: 200px;
+    background: #E73A2E;
+    border-radius: 35px;
+    border: 2px solid #E73A2E;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border:none;
+    color:#fff;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+    &:hover{
+        background:#fff;
+        color:#111;
+    }
+}
